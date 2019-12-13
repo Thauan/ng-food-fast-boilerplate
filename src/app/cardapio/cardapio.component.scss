@@ -1,0 +1,67 @@
+.cardapio {
+	font-family: Roboto;
+}
+
+.text-white{
+  color: white;
+  font-size: 22px;
+}
+
+.list-cart {
+  list-style-type:none;
+}
+
+.my-badge{
+  background-color: white;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.text-bagde{
+  padding: 8px;
+  color: red;
+  font-size: 18px;
+}
+
+.notification-icon--fixed {
+  position: relative;
+  color: #fff;
+  background-color: #FF4081;
+  border-radius: 50%;
+  font-family: "Roboto";
+
+  /* Alignment */
+  line-height: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Adjust as required: */
+  padding: 10px;
+}
+
+/* Height = width */
+.notification-icon--fixed::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.modal-content {
+	background: #3e0048;
+	h4, p{color: white }
+}
+
+.modal-footer{
+  background: #e91e63;
+  border-radius: 0 !important;
+	a {
+    color: white
+  }
+}
+
+.modal{
+  height: 65%;
+  max-height: 65%;
+  background: #e91e63;
+}

@@ -1,0 +1,28 @@
+<div class="produtos">
+<table *ngFor="let FoodItem of foods">
+<tr>
+        <td class="td_name"><h1>{{FoodItem?.name}}</h1></td>
+    </tr>
+    <tr><h3>R$ <strong>{{FoodItem?.price}}</strong></h3></tr>
+    <tr>
+        <td class="table-img">
+          <a data-target="modal" class="btn-floating btn-large waves-effect waves-light pink modal-trigger" (click)="addItem(FoodItem)">
+            <i class="material-icons">add</i>
+          </a>
+            <div class="prod_img">
+                <img [src]="FoodItem?.imagePath" alt="">
+                <svg width="0" height="0">
+                    <defs>
+                        <clipPath id="myClip">
+                            <ellipse rx="50" ry="75"
+                                cx="50" cy="150"
+                                transform="rotate(-30)"/>
+                        </clipPath>
+                </defs>
+                </svg>
+            </div>
+        </td>
+    </tr>
+    <tr><td>{{FoodItem?.description}}</td></tr>
+</table>
+</div>

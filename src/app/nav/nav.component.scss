@@ -1,0 +1,23 @@
+.supernav {
+  height: 120vh;
+	background: white;
+  width: 100%;
+  max-width: 100%;
+  z-index: 99999;
+
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 27%, 0 15%);
+clip-path: polygon(0 0, 100% 0, 100% 27%, 0 15%);
+}
+
+.logo {
+width: 50%;
+img{
+    width: 170px;
+  height: 100px;
+  padding: 1em;
+}
+}
+
+header {
+  height: 200px;
+}

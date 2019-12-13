@@ -1,0 +1,26 @@
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
+	<div class="cardapio">
+			<app-food-item></app-food-item>
+	  <!-- Modal Structure -->
+		<div id="modal" class="modal bottom-sheet" materialize="modal">
+			<div class="modal-content">
+        <h4>Carrinho</h4>
+        <p>{{items().length}} items no carrinho!</p>
+        <li *ngFor="let item of items()" class="text-white list-cart">
+            <a class="notification-icon--fixed">
+                <small class="notification-badge">{{ item.quantity }}</small>
+              </a>
+          {{item.foodItem.name}}
+        </li>
+        <h5>
+        <p>
+              {{ total() | currency: 'BRL'}}
+        </p>
+      </h5>
+
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-white btn-flat pink">Finalizar compra	<i class="material-icons">shopping_cart</i></a>
+			</div>
+		</div>
+</div>

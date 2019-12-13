@@ -1,0 +1,42 @@
+.produtos {
+    padding: 0;
+table {
+    margin: 2rem 50px;
+    float: left;
+
+    @media screen and (min-width: 424px) {
+        width: 280px;
+    }
+
+    @media screen and (max-width: 420px) {
+        width: 130px;
+    }
+    .td_name{
+        width: 80%;
+    }
+ td, th, tr {
+    margin: 0;
+    padding: 0;
+    color: white;
+    h1{
+        font-size: 4em;
+        line-height: 3.5rem;
+        margin: 0;    
+}
+    h3 {
+        color: #e91e63;
+    }
+
+}
+}
+
+img{
+height: 180px;
+
+-webkit-clip-path: url(#myClip);
+clip-path: url(#myClip);
+width: 240px;
+}
+}
+.prod_img {z-index: 1; height: 180px}
+.btn-floating.btn-large { z-index: 2; bottom: -80px; right: -20px;}
