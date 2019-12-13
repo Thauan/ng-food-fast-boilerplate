@@ -1,5 +1,5 @@
-# FoodFast
-> Spa para delivery [Angular].
+# NG FoodFast
+> Spa para delivery [Angular][Boilerplate].
 
 <img src="https://github.com/Thauan/ng-food-fast-boilerplate/blob/master/1.png" width="300"/> <img src="https://github.com/Thauan/ng-food-fast-boilerplate/blob/master/2.png" width="300"/>
 
