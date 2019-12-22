@@ -19,7 +19,7 @@ export class ShoppingCartService {
 
   removeItem(item: CartItem) {
     this.items.splice(this.items.indexOf(item), 1);
-    console.log(item);
+    // console.log(item);
   }
 
   total(): number {

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterializeModule, MaterializeAction,  MaterializeDirective } from 'angular2-materialize';
 import { HttpModule } from '@angular/http';
@@ -28,7 +28,7 @@ import { ShoppingCartService } from './cardapio/shopping-cart/shopping-cart.serv
     HttpModule,
     HttpClientModule
   ],
-  providers: [FoodService, ShoppingCartService],
+  providers: [FoodService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
