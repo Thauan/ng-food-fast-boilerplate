@@ -3,6 +3,7 @@ import {Http } from '@angular/http';
 import {ShoppingCartService} from './shopping-cart/shopping-cart.service';
 import {MaterializeDirective, MaterializeAction} from 'angular2-materialize';
 // import {FoodItem} from './food-item/food-item.component';
+import { CartItem } from '../cardapio/shopping-cart/cart-item.model';
 
 
 @Component({
@@ -19,13 +20,20 @@ export class CardapioComponent implements OnInit {
     console.log(this.shoppingCartService.items);
   }
 
+  clear(): void {
+    return this.shoppingCartService.clear();
+  }
+
   items(): any[] {
     return this.shoppingCartService.items;
   }
 
-
   total(): number {
     return this.shoppingCartService.total();
+  }
+
+  remove(item: CartItem): void {
+    return this.shoppingCartService.removeItem(item);
   }
 
 }

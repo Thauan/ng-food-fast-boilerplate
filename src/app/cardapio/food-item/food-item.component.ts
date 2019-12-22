@@ -3,6 +3,7 @@ import { FoodItem } from './food-item.model';
 import { FoodService } from './food-item.service';
 import { Dialogs } from '../cardapio.component';
 import { ShoppingCartService } from '../shopping-cart/shopping-cart.service';
+import { CartItem } from '../shopping-cart/cart-item.model';
 
 @Component({
   selector: 'app-food-item',
@@ -21,8 +22,13 @@ export class FoodItemComponent implements OnInit {
     }
 
     addItem(item: FoodItem) {
-      // console.log(item);
+      console.log(item);
       this.shoppingCartService.addItem(item);
+    }
+
+    removeCartItem(item: CartItem){
+      console.log(item);
+      this.shoppingCartService.removeItem(item);
     }
 
 }

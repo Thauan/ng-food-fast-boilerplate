@@ -6,15 +6,20 @@
 			<div class="modal-content">
         <h4>Carrinho</h4>
         <p>{{items().length}} items no carrinho!</p>
-        <li *ngFor="let item of items()" class="text-white list-cart">
-            <a class="notification-icon--fixed">
-                <small class="notification-badge">{{ item.quantity }}</small>
+        <li *ngFor="let item of items()" class="text-white list-cart" style="margin-bottom: 2rem;">
+            <a class="btn-floating btn waves-effect waves-light pink">
+               {{ item.quantity }}
               </a>
           {{item.foodItem.name}}
+          <a class="btn-floating btn waves-effect waves-light pink" (click)="remove(CartItem)">x</a>
+
         </li>
+        <a *ngIf="items().length > 0" style="margin-bottom: 2rem; padding-top: 3rem; color: white; font-size: 18px;" (click)="clear()">
+          Limpar carrinho
+        </a>
         <h5>
         <p>
-              {{ total() | currency: 'BRL'}}
+              {{ total() | currency: 'BRL': true }}
         </p>
       </h5>
 
