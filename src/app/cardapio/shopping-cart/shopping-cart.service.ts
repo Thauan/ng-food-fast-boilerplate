@@ -26,8 +26,6 @@ export class ShoppingCartService {
     return this.items
     .map(item => item.value())
     .reduce((prev, value) => prev + value, 0);
-
-    // console.log(this.items);
   }
 
 
